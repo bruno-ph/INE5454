@@ -1,0 +1,402 @@
+[
+    {
+        "appid": "2694490",
+        "title": "Path of Exile 2"
+    },
+    {
+        "appid": "730",
+        "title": "Counter-Strike 2"
+    },
+    {
+        "appid": "2767030",
+        "title": "Marvel Rivals"
+    },
+    {
+        "appid": "2677660",
+        "title": "Indiana Jones and the Great Circle"
+    },
+    {
+        "appid": "578080",
+        "title": "PUBG: BATTLEGROUNDS"
+    },
+    {
+        "appid": "2933620",
+        "title": "Call of Duty®: Black Ops 6"
+    },
+    {
+        "appid": "1174180",
+        "title": "Red Dead Redemption 2"
+    },
+    {
+        "appid": "570",
+        "title": "Dota 2"
+    },
+    {
+        "appid": "2669320",
+        "title": "EA SPORTS FC™ 25"
+    },
+    {
+        "appid": "1293830",
+        "title": "Forza Horizon 4"
+    },
+    {
+        "appid": "227300",
+        "title": "Euro Truck Simulator 2"
+    },
+    {
+        "appid": "1962663",
+        "title": "Call of Duty®: Warzone™"
+    },
+    {
+        "appid": "252490",
+        "title": "Rust"
+    },
+    {
+        "appid": "1643320",
+        "title": "S.T.A.L.K.E.R. 2: Heart of Chornobyl"
+    },
+    {
+        "appid": "2507950",
+        "title": "Delta Force"
+    },
+    {
+        "appid": "236390",
+        "title": "War Thunder"
+    },
+    {
+        "appid": "230410",
+        "title": "Warframe"
+    },
+    {
+        "appid": "2074920",
+        "title": "The First Descendant"
+    },
+    {
+        "appid": "2183900",
+        "title": "Warhammer 40,000: Space Marine 2"
+    },
+    {
+        "appid": "2878980",
+        "title": "NBA 2K25"
+    },
+    {
+        "appid": "1086940",
+        "title": "Baldur's Gate 3"
+    },
+    {
+        "appid": "1551360",
+        "title": "Forza Horizon 5"
+    },
+    {
+        "appid": "359550",
+        "title": "Tom Clancy's Rainbow Six® Siege"
+    },
+    {
+        "appid": "1172470",
+        "title": "Apex Legends™"
+    },
+    {
+        "appid": "552990",
+        "title": "World of Warships"
+    },
+    {
+        "appid": "1449850",
+        "title": "Yu-Gi-Oh! Master Duel"
+    },
+    {
+        "appid": "518790",
+        "title": "theHunter: Call of the Wild™"
+    },
+    {
+        "appid": "2300320",
+        "title": "Farming Simulator 25"
+    },
+    {
+        "appid": "949230",
+        "title": "Cities: Skylines II"
+    },
+    {
+        "appid": "381210",
+        "title": "Dead by Daylight"
+    },
+    {
+        "appid": "271590",
+        "title": "Grand Theft Auto V"
+    },
+    {
+        "appid": "2537590",
+        "title": "Microsoft Flight Simulator 2024"
+    },
+    {
+        "appid": "2139460",
+        "title": "Once Human"
+    },
+    {
+        "appid": "2521380",
+        "title": "Legacy of Kain™ Soul Reaver 1&2 Remastered"
+    },
+    {
+        "appid": "1203220",
+        "title": "NARAKA: BLADEPOINT"
+    },
+    {
+        "appid": "1245620",
+        "title": "ELDEN RING"
+    },
+    {
+        "appid": "2358720",
+        "title": "Black Myth: Wukong"
+    },
+    {
+        "appid": "3097560",
+        "title": "Liar's Bar"
+    },
+    {
+        "appid": "2246340",
+        "title": "Monster Hunter Wilds"
+    },
+    {
+        "appid": "289070",
+        "title": "Sid Meier’s Civilization® VI"
+    },
+    {
+        "appid": "221100",
+        "title": "DayZ"
+    },
+    {
+        "appid": "1259420",
+        "title": "Days Gone"
+    },
+    {
+        "appid": "1623730",
+        "title": "Palworld"
+    },
+    {
+        "appid": "275850",
+        "title": "No Man's Sky"
+    },
+    {
+        "appid": "427520",
+        "title": "Factorio"
+    },
+    {
+        "appid": "553850",
+        "title": "HELLDIVERS™ 2"
+    },
+    {
+        "appid": "2379780",
+        "title": "Balatro"
+    },
+    {
+        "appid": "739630",
+        "title": "Phasmophobia"
+    },
+    {
+        "appid": "270880",
+        "title": "American Truck Simulator"
+    },
+    {
+        "appid": "1282270",
+        "title": "Strinova"
+    },
+    {
+        "appid": "1091500",
+        "title": "Cyberpunk 2077"
+    },
+    {
+        "appid": "1361210",
+        "title": "Warhammer 40,000: Darktide"
+    },
+    {
+        "appid": "1407200",
+        "title": "World of Tanks"
+    },
+    {
+        "appid": "1435790",
+        "title": "Escape Simulator"
+    },
+    {
+        "appid": "39210",
+        "title": "FINAL FANTASY XIV Online"
+    },
+    {
+        "appid": "333640",
+        "title": "Caves of Qud"
+    },
+    {
+        "appid": "1222670",
+        "title": "The Sims™ 4"
+    },
+    {
+        "appid": "413150",
+        "title": "Stardew Valley"
+    },
+    {
+        "appid": "2698940",
+        "title": "The Crew Motorfest"
+    },
+    {
+        "appid": "306130",
+        "title": "The Elder Scrolls® Online"
+    },
+    {
+        "appid": "394360",
+        "title": "Hearts of Iron IV"
+    },
+    {
+        "appid": "1151340",
+        "title": "Fallout 76"
+    },
+    {
+        "appid": "305620",
+        "title": "The Long Dark"
+    },
+    {
+        "appid": "916440",
+        "title": "Anno 1800"
+    },
+    {
+        "appid": "244210",
+        "title": "Assetto Corsa"
+    },
+    {
+        "appid": "1966720",
+        "title": "Lethal Company"
+    },
+    {
+        "appid": "2231380",
+        "title": "Tom Clancy's Ghost Recon® Breakpoint"
+    },
+    {
+        "appid": "613100",
+        "title": "House Flipper"
+    },
+    {
+        "appid": "444200",
+        "title": "World of Tanks Blitz"
+    },
+    {
+        "appid": "1326470",
+        "title": "Sons Of The Forest"
+    },
+    {
+        "appid": "2415010",
+        "title": "A Date with Death"
+    },
+    {
+        "appid": "648800",
+        "title": "Raft"
+    },
+    {
+        "appid": "2768430",
+        "title": "ATLYSS"
+    },
+    {
+        "appid": "440",
+        "title": "Team Fortress 2"
+    },
+    {
+        "appid": "835960",
+        "title": "The Talos Principle 2"
+    },
+    {
+        "appid": "805550",
+        "title": "Assetto Corsa Competizione"
+    },
+    {
+        "appid": "1465360",
+        "title": "SnowRunner"
+    },
+    {
+        "appid": "1158310",
+        "title": "Crusader Kings III"
+    },
+    {
+        "appid": "699130",
+        "title": "World War Z"
+    },
+    {
+        "appid": "1771300",
+        "title": "Kingdom Come: Deliverance II"
+    },
+    {
+        "appid": "1049590",
+        "title": "Eternal Return"
+    },
+    {
+        "appid": "2344520",
+        "title": "Diablo® IV"
+    },
+    {
+        "appid": "534380",
+        "title": "Dying Light 2 Stay Human: Reloaded Edition"
+    },
+    {
+        "appid": "1203620",
+        "title": "Enshrouded"
+    },
+    {
+        "appid": "1845910",
+        "title": "Dragon Age™: The Veilguard"
+    },
+    {
+        "appid": "1085660",
+        "title": "Destiny 2"
+    },
+    {
+        "appid": "294100",
+        "title": "RimWorld"
+    },
+    {
+        "appid": "1401590",
+        "title": "Disney Dreamlight Valley"
+    },
+    {
+        "appid": "1295660",
+        "title": "Sid Meier's Civilization VII"
+    },
+    {
+        "appid": "1641960",
+        "title": "Forever Skies"
+    },
+    {
+        "appid": "2399830",
+        "title": "ARK: Survival Ascended"
+    },
+    {
+        "appid": "1332010",
+        "title": "Stray"
+    },
+    {
+        "appid": "2357570",
+        "title": "Overwatch® 2"
+    },
+    {
+        "appid": "2322010",
+        "title": "God of War Ragnarök"
+    },
+    {
+        "appid": "2909110",
+        "title": "Nuclear Nightmare"
+    },
+    {
+        "appid": "281990",
+        "title": "Stellaris"
+    },
+    {
+        "appid": "284160",
+        "title": "BeamNG.drive"
+    },
+    {
+        "appid": "1144200",
+        "title": "Ready or Not"
+    },
+    {
+        "appid": "1562430",
+        "title": "DREDGE"
+    },
+    {
+        "appid": "753640",
+        "title": "Outer Wilds"
+    }
+]

@@ -1,0 +1,358 @@
+{
+    "United Kingdom": {
+        "code": "GB",
+        "proxy": "http://144.24.77.244:8118"
+    },
+    "Australia": {
+        "code": "AU",
+        "proxy": "socks4://124.180.154.176:8080"
+    },
+    "Azerbaijan": {
+        "code": "AZ"
+    },
+    "India": {
+        "code": "IN",
+        "proxy": "http://167.103.3.22:11011"
+    },
+    "Israel": {
+        "code": "IL",
+        "proxy": "http://77.137.21.78:19000"
+    },
+    "Italy": {
+        "code": "IT",
+        "proxy": "socks4://2.115.76.130:3128"
+    },
+    "Kazakhstan": {
+        "code": "KZ",
+        "proxy": "http://94.247.129.244:3128"
+    },
+    "Kuwait": {
+        "code": "KW"
+    },
+    "New Zealand": {
+        "code": "NZ",
+        "proxy": "http://180.189.212.1:8080"
+    },
+    "Norway": {
+        "code": "NO",
+        "proxy": "http://185.125.169.24:8118"
+    },
+    "Pakistan": {
+        "code": "PK"
+    },
+    "Poland": {
+        "code": "PL",
+        "proxy": "socks4://146.59.18.246:20734"
+    },
+    "Qatar": {
+        "code": "QA",
+        "proxy": "http://37.208.191.166:8080"
+    },
+    "Saudi Arabia": {
+        "code": "SA",
+        "proxy": "http://77.87.19.54:8080"
+    },
+    "South Africa": {
+        "code": "ZA",
+        "proxy": "socks4://165.73.128.177:56975"
+    },
+    "Switzerland": {
+        "code": "CH",
+        "proxy": "socks4://179.43.182.73:1080"
+    },
+    "Turkey": {
+        "code": "TR",
+        "proxy": "http://38.156.73.61:8080"
+    },
+    "Ukraine": {
+        "code": "UA",
+        "proxy": "socks4://31.43.33.56:4153"
+    },
+    "United Arab Emirates": {
+        "code": "AE",
+        "proxy": "http://87.248.129.32:80"
+    },
+    "Brazil": {
+        "code": "BR",
+        "proxy": "socks4://179.107.61.23:4145"
+    },
+    "American Samoa": {
+        "code": "AS"
+    },
+    "Anguilla": {
+        "code": "AI"
+    },
+    "Antigua and Barbuda": {
+        "code": "AG"
+    },
+    "Argentina": {
+        "code": "AR",
+        "proxy": "http://164.163.42.15:10000"
+    },
+    "Aruba": {
+        "code": "AW"
+    },
+    "Bahamas": {
+        "code": "BS"
+    },
+    "Barbados": {
+        "code": "BB"
+    },
+    "Belize": {
+        "code": "BZ"
+    },
+    "Bermuda": {
+        "code": "BM"
+    },
+    "Bhutan": {
+        "code": "BT"
+    },
+    "Bolivia": {
+        "code": "BO",
+        "proxy": "http://190.186.216.60:999"
+    },
+    "Bonaire/Sint Eustatius/Saba": {
+        "code": "BQ"
+    },
+    "British Virgin Islands": {
+        "code": "VG"
+    },
+    "Brunei Darussalam": {
+        "code": "BN"
+    },
+    "Cambodia": {
+        "code": "KH",
+        "proxy": "http://175.100.103.170:55443"
+    },
+    "Canada": {
+        "code": "CA",
+        "proxy": "http://158.51.210.75:8888"
+    },
+    "Cayman Islands": {
+        "code": "KY"
+    },
+    "Chile": {
+        "code": "CL",
+        "proxy": "http://45.4.1.208:999"
+    },
+    "Colombia": {
+        "code": "CO",
+        "proxy": "http://177.93.59.71:999"
+    },
+    "Costa Rica": {
+        "code": "CR",
+        "proxy": "http://190.61.106.97:8080"
+    },
+    "Curaçao": {
+        "code": "CW"
+    },
+    "Dominica": {
+        "code": "DM"
+    },
+    "Dominican Republic": {
+        "code": "DO",
+        "proxy": "socks4://38.156.238.219:999"
+    },
+    "Ecuador": {
+        "code": "EC",
+        "proxy": "http://190.95.202.210:999"
+    },
+    "El Salvador": {
+        "code": "SV"
+    },
+    "Falkland Islands (Malvinas)": {
+        "code": "FK"
+    },
+    "Federated States of Micronesia": {
+        "code": "FM"
+    },
+    "Fiji": {
+        "code": "FJ"
+    },
+    "French Guiana": {
+        "code": "GF"
+    },
+    "Guadeloupe": {
+        "code": "GP"
+    },
+    "Guam": {
+        "code": "GU"
+    },
+    "Guatemala": {
+        "code": "GT",
+        "proxy": "http://190.61.90.117:8080"
+    },
+    "Guyana": {
+        "code": "GY"
+    },
+    "Haiti": {
+        "code": "HT"
+    },
+    "Honduras": {
+        "code": "HN",
+        "proxy": "http://138.0.228.120:8080"
+    },
+    "Hong Kong": {
+        "code": "HK",
+        "proxy": "socks4://194.246.114.158:3128"
+    },
+    "Indonesia": {
+        "code": "ID",
+        "proxy": "http://103.189.197.113:8181"
+    },
+    "Jamaica": {
+        "code": "JM"
+    },
+    "Lao People's Democratic Republic": {
+        "code": "LA",
+        "proxy": "socks4://202.137.141.212:5678"
+    },
+    "Macau": {
+        "code": "MO"
+    },
+    "Malaysia": {
+        "code": "MY",
+        "proxy": "http://175.139.233.78:80"
+    },
+    "Marshall Islands": {
+        "code": "MH"
+    },
+    "Martinique": {
+        "code": "MQ"
+    },
+    "Mexico": {
+        "code": "MX",
+        "proxy": "http://200.94.102.12:999"
+    },
+    "Mongolia": {
+        "code": "MN"
+    },
+    "Montserrat": {
+        "code": "MS"
+    },
+    "Myanmar": {
+        "code": "MM",
+        "proxy": "http://103.59.163.205:8080"
+    },
+    "Nepal": {
+        "code": "NP",
+        "proxy": "socks4://202.70.80.153:5678"
+    },
+    "Nicaragua": {
+        "code": "NI"
+    },
+    "Northern Mariana Islands": {
+        "code": "MP"
+    },
+    "Palau": {
+        "code": "PW"
+    },
+    "Panama": {
+        "code": "PA",
+        "proxy": "http://181.174.165.1:8080"
+    },
+    "Papua New Guinea": {
+        "code": "PG"
+    },
+    "Paraguay": {
+        "code": "PY",
+        "proxy": "http://190.128.248.134:999"
+    },
+    "Peru": {
+        "code": "PE",
+        "proxy": "http://209.45.108.230:1011"
+    },
+    "Philippines": {
+        "code": "PH",
+        "proxy": "socks4://8.212.151.166:3128"
+    },
+    "Puerto Rico": {
+        "code": "PR",
+        "proxy": "http://192.203.0.70:999"
+    },
+    "Saint Barthélemy": {
+        "code": "BL"
+    },
+    "Saint Kitts and Nevis": {
+        "code": "KN"
+    },
+    "Saint Lucia": {
+        "code": "LC"
+    },
+    "Saint Martin": {
+        "code": "MF"
+    },
+    "Saint Pierre and Miquelon": {
+        "code": "PM"
+    },
+    "Saint Vincent and the Grenadines": {
+        "code": "VC"
+    },
+    "Singapore": {
+        "code": "SG",
+        "proxy": "http://51.79.135.181:8080"
+    },
+    "Sint Maarten (Dutch part)": {
+        "code": "SX"
+    },
+    "South Georgia and the South Sandwich Islands": {
+        "code": "GS"
+    },
+    "South Korea": {
+        "code": "KR",
+        "proxy": "socks4://146.56.96.179:14280"
+    },
+    "Suriname": {
+        "code": "SR"
+    },
+    "Taiwan": {
+        "code": "TW",
+        "proxy": "socks4://118.150.241.128:3128"
+    },
+    "Thailand": {
+        "code": "TH",
+        "proxy": "http://27.254.46.194:80"
+    },
+    "Trinidad and Tobago": {
+        "code": "TT"
+    },
+    "Turks and Caicos Islands": {
+        "code": "TC"
+    },
+    "U.S. Virgin Islands": {
+        "code": "VI"
+    },
+    "United States Minor Outlying Islands": {
+        "code": "UM"
+    },
+    "United States of America": {
+        "code": "US",
+        "proxy": "http://148.72.168.81:30118"
+    },
+    "Uruguay": {
+        "code": "UY",
+        "proxy": "socks4://200.125.40.38:5678"
+    },
+    "Venezuela": {
+        "code": "VE",
+        "proxy": "socks4://200.108.190.110:9800"
+    },
+    "Japan": {
+        "code": "JP",
+        "proxy": "socks4://103.23.168.2:80"
+    },
+    "China": {
+        "code": "CN",
+        "proxy": "http://39.165.236.146:808"
+    },
+    "Viet Nam": {
+        "code": "VN",
+        "proxy": "http://222.252.194.204:8080"
+    },
+    "Maldives": {
+        "code": "MV"
+    },
+    "Sri Lanka": {
+        "code": "LK"
+    }
+}
