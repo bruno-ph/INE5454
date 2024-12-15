@@ -1,0 +1,112 @@
+{
+    "United Kingdom":
+        {
+            "currency": "British Pound",
+            "rateToDollar": 1.28
+        },
+    "Australia":
+        {
+            "currency": "Australian Dollar",
+            "rateToDollar": 0.64
+        },
+    "Azerbaijan":
+        {
+            "currency": "Azerbaijani Manat",
+            "rateToDollar": 0.59
+        },
+    "India":
+        {
+            "currency": "Indian Rupee",
+            "rateToDollar": 0.012
+        },
+    "Israel":
+        {
+            "currency": "Israeli Shekel",
+            "rateToDollar": 0.26
+        },
+    "Italy":
+        {
+            "currency": "Euro",
+            "rateToDollar": 1.10
+        },
+    "Kazakhstan":
+        {
+            "currency": "Kazakhstani Tenge",
+            "rateToDollar": 0.0021
+        },
+    "Kuwait":
+        {
+            "currency": "Kuwaiti Dinar",
+            "rateToDollar": 3.26
+        },
+    "New Zealand":
+        {
+            "currency": "New Zealand Dollar",
+            "rateToDollar": 0.59
+        },
+    "Norway":
+        {
+            "currency": "Norwegian Krone",
+            "rateToDollar": 0.093
+        },
+    "Pakistan":
+        {
+            "currency": "Pakistani Rupee",
+            "rateToDollar": 0.0036
+        },
+    "Poland":
+        {
+            "currency": "Polish Zloty",
+            "rateToDollar": 0.24
+        },
+    "Qatar":
+        {
+            "currency": "Qatari Riyal",
+            "rateToDollar": 0.27
+        },
+    "Saudi Arabia":
+        {
+            "currency": "Saudi Riyal",
+            "rateToDollar": 0.27
+        },
+    "South Africa":
+        {
+            "currency": "South African Rand",
+            "rateToDollar": 0.054
+        },
+    "Switzerland":
+        {
+            "currency": "Swiss Franc",
+            "rateToDollar": 1.12
+        },
+    "Turkey":
+        {
+            "currency": "Turkish Lira",
+            "rateToDollar": 0.037
+        },
+    "Ukraine":
+        {
+            "currency": "Ukrainian Hryvnia",
+            "rateToDollar": 0.027
+        },
+    "United Arab Emirates":
+        {
+            "currency": "UAE Dirham",
+            "rateToDollar": 0.27
+        },
+    "Brazil":
+        {
+            "currency": "Brazilian Real",
+            "rateToDollar": 0.20
+        },
+    "American Samoa":
+        {
+            "currency": "US Dollar",
+            "rateToDollar": 1.00
+        },
+    "Sri Lanka":
+        {
+            "currency": "Sri Lankan Rupee",
+            "rateToDollar": 0.0031
+        }
+}
