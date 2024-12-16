@@ -1,12 +1,3 @@
-import requests
-import json
-from bs4 import BeautifulSoup
-from igdb.wrapper import IGDBWrapper
-clientid="nx5zqiyng6ct1v7pc2eydlu1k6af47"
-accesskey="yjcrfnaj2ypp0oqtp4xwblkw8r8dzj"
-
-
-
 def get_igdb_game(game_title):
     print(game_title)
     wrapper = IGDBWrapper(clientid, accesskey)
