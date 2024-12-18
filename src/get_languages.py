@@ -29,16 +29,15 @@ def get_languages():
     games_file = open(os.path.join(root_folder, "list_total.json"), "r")
     games_dict = json.load(games_file)
     for appid in games_dict.keys():
-
         try:
             print(len(return_dict), "-", (appid))
             gameurl = "https://store.steampowered.com/app/" + appid
             page = requests.get(gameurl)
             game_langs = read_lang_table(page)
-            return_dict[appid] = game_langs
-        except Exception as e:
-            print(e)
+            return_dict[appid] = {"languages": game_langs, "url": gameurl}
 
+        except:
+            print("Error on " + appid)
     with open(os.path.join(root_folder, "list_languages.json"), "w") as returnfile:
         json.dump(return_dict, returnfile, indent=4, ensure_ascii=False)
 
