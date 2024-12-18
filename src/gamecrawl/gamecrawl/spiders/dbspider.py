@@ -1,72 +1,73 @@
-import csv
-import scrapy
-from scrapy import signals
-from scrapy.crawler import CrawlerProcess
-from scrapy.signalmanager import dispatcher
-import re
-
-class DBSpider(scrapy.Spider):
-    name = 'dpspider'
-
-    def start_requests(self):
-        url="https://rawg.io/games/wild-animal-racing"
-        yield scrapy.Request(url=url, callback=self.parse)
-
-    def parse(self, response):
-        html_doc=response.text
-        gameid=(re.search(r"\\u002Fapp\\u002F(\d+)\\u002F", html_doc))
-        if gameid:
-            appid= gameid.group(1)
-        else:
-            raise Exception
-        genre_block=response.xpath('//meta[@itemprop="genre"]')
-        for g in genre_block:
-            genre=g.xpath('@content').get()
-            yield{appid:genre}
-
-def dbspider_run():
-    game_tag_results = []
-
-    def crawler_results(item):
-        print(item)
-        game_tag_results.append(item)
-    for tag in game_tag_results:
-        print(tag)
-
-    dispatcher.connect(crawler_results, signal=signals.item_scraped)
-    crawler_process = CrawlerProcess()
-    crawler_process.crawl(DBSpider)
-    crawler_process.start()
-    return game_tag_results
-
-
-if __name__ == '__main__':
-    tags=dbspider_run()
-
-    keys = tags[0].keys()
-    with open('books_data.csv', 'w', newline='') as output_file_name:
-        writer = csv.DictWriter(output_file_name, keys)
-        writer.writerows(tags)
-
+import json
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
+import re
+from pathlib import Path
+import os
 
-#/class CrawlingSpider(CrawlSpider):
-    #name="dpspider"
-    #allowed_domains = ["rawg.io"]
-    #start_urls=["https://rawg.io/"]
 
-    ##rules = (
-   #     Rule(LinkExtractor(allow=r"/games/(.+)/",restrict_css='#search_result_container'),callback="parse_item", follow=True),
-  #      
- #       Rule(LinkExtractor(allow='page=(d+)',restrict_css='.search_pagination_right'))      #allows for multiple pages of lookup
-#)
-    
-    #def parse(self, response):
-     #   print("aaazz")
-      #  tags=response.html
-       # tags2=response.css
-        #print(tags2)
-        #print(tags)
-        #Rule(LinkExtractor(allow=r"/search/"), callback="parse_item", follow=True)/#
-    
+def searchform(somestr):
+    try:
+        tmp = re.sub(r"[`']", "", somestr)
+        tmp = re.sub(r"[^\w\s-]", "", tmp)  # Remove symbols (like ®, ™, ©) and emojis
+        tmp = re.sub(r"[./]", "", tmp)  # Remove periods and slashes
+    except TypeError:
+        print(somestr)
+        return
+    separated = re.split(r"[-:,\s]+", tmp)
+    newstr = "-".join(separated)
+    return newstr.lower()
+
+
+# open a json file
+root_folder = Path(__file__).parents[3]
+with open(os.path.join(str(root_folder), "list_total.json")) as jsonFile:
+    gamefile = json.load(jsonFile)
+    gameids = gamefile.keys()
+    gamenames = [gamefile[key]["title"] for key in gamefile.keys()]
+    angamenames = {searchform(gn): gn for gn in gamenames}
+    searchgames = {
+        searchform(gamefile[identifier]["title"]): identifier for identifier in gameids
+    }
+
+
+class DBSpider(CrawlSpider):
+    name = "dbspider"
+    start_urls = [
+        "https://rawg.io/",
+    ]
+    for gn in gamenames:
+        start_urls.append("https://rawg.io/games/" + searchform(gn))
+    allowed_domains = ["rawg.io"]
+    rules = (
+        Rule(
+            LinkExtractor(allow=(r"rawg.io/games/[^/]+/?$")),
+            callback="parse_rawg",
+            follow=True,
+        ),
+        Rule(LinkExtractor(allow=(r"/games/")), callback=None, follow=True),
+    )
+    custom_settings = {"DEPTH_LIMIT": 2}
+
+    def parse_rawg(self, response):
+        html_doc = response.text
+        gameid = re.search(r"\\u002Fapp\\u002F(\d+)\\u002F", html_doc)
+        gamename = response.xpath(
+            '//h1[@class="heading heading_1 game__title"]/text()'
+        ).get()
+
+        if gameid:
+            appid = gameid.group(1)
+            if appid not in gameids:
+                return
+            gamename = gamefile[appid]["title"]
+        elif searchform(gamename) in angamenames.keys():
+            appid = searchgames[searchform(gamename)]
+        else:
+            return
+        genre_block = response.xpath('//meta[@itemprop="genre"]')
+        genres = []
+        for g in genre_block:
+            genre = g.xpath("@content").get()
+            genres.append(genre)
+        yield {appid: {"title": gamename, "genres": genres,"url": response.url}}
