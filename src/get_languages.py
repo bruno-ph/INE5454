@@ -17,21 +17,30 @@ def read_lang_table(page):
         else:
             collumns = language_block.findAll("td")
             language_name = collumns[0].text
-            print(collumns[1].text)
+            # print(collumns[1].text)
             if collumns[1].text.strip() == "✔":
                 languages.append(language_name.strip())
     return languages
 
 
 def get_languages():
+    return_dict = {}
     root_folder = Path(__file__).parents[0]
     games_file = open(os.path.join(root_folder, "list_total.json"), "r")
     games_dict = json.load(games_file)
     for appid in games_dict.keys():
-        gameurl = "https://store.steampowered.com/app/" + appid
-        page = requests.get(gameurl)
-        game_langs = read_lang_table(page)
-        print(appid, games_dict[appid]["title"], game_langs, gameurl)
+
+        try:
+            print(len(return_dict), "-", (appid))
+            gameurl = "https://store.steampowered.com/app/" + appid
+            page = requests.get(gameurl)
+            game_langs = read_lang_table(page)
+            return_dict[appid] = game_langs
+        except Exception as e:
+            print(e)
+
+    with open(os.path.join(root_folder, "list_languages.json"), "w") as returnfile:
+        json.dump(return_dict, returnfile, indent=4, ensure_ascii=False)
 
 
 if __name__ == "__main__":
