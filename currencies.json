@@ -1,112 +1,190 @@
 {
-    "United Kingdom":
-        {
-            "currency": "British Pound",
-            "rateToDollar": 1.28
-        },
-    "Australia":
-        {
-            "currency": "Australian Dollar",
-            "rateToDollar": 0.64
-        },
-    "Azerbaijan":
-        {
-            "currency": "Azerbaijani Manat",
-            "rateToDollar": 0.59
-        },
-    "India":
-        {
-            "currency": "Indian Rupee",
-            "rateToDollar": 0.012
-        },
-    "Israel":
-        {
-            "currency": "Israeli Shekel",
-            "rateToDollar": 0.26
-        },
-    "Italy":
-        {
-            "currency": "Euro",
-            "rateToDollar": 1.10
-        },
-    "Kazakhstan":
-        {
-            "currency": "Kazakhstani Tenge",
-            "rateToDollar": 0.0021
-        },
-    "Kuwait":
-        {
-            "currency": "Kuwaiti Dinar",
-            "rateToDollar": 3.26
-        },
-    "New Zealand":
-        {
-            "currency": "New Zealand Dollar",
-            "rateToDollar": 0.59
-        },
-    "Norway":
-        {
-            "currency": "Norwegian Krone",
-            "rateToDollar": 0.093
-        },
-    "Pakistan":
-        {
-            "currency": "Pakistani Rupee",
-            "rateToDollar": 0.0036
-        },
-    "Poland":
-        {
-            "currency": "Polish Zloty",
-            "rateToDollar": 0.24
-        },
-    "Qatar":
-        {
-            "currency": "Qatari Riyal",
-            "rateToDollar": 0.27
-        },
-    "Saudi Arabia":
-        {
-            "currency": "Saudi Riyal",
-            "rateToDollar": 0.27
-        },
-    "South Africa":
-        {
-            "currency": "South African Rand",
-            "rateToDollar": 0.054
-        },
-    "Switzerland":
-        {
-            "currency": "Swiss Franc",
-            "rateToDollar": 1.12
-        },
-    "Turkey":
-        {
-            "currency": "Turkish Lira",
-            "rateToDollar": 0.037
-        },
-    "Ukraine":
-        {
-            "currency": "Ukrainian Hryvnia",
-            "rateToDollar": 0.027
-        },
-    "United Arab Emirates":
-        {
-            "currency": "UAE Dirham",
-            "rateToDollar": 0.27
-        },
-    "Brazil":
-        {
-            "currency": "Brazilian Real",
-            "rateToDollar": 0.20
-        },
-    "American Samoa":
-        {
-            "currency": "US Dollar",
-            "rateToDollar": 1.00
-        },
-    "Sri Lanka":
-        {
-            "currency": "Sri Lankan Rupee",
-            "rateToDollar": 0.0031
-        }
+    "GB": {
+        "currency": "GBP",
+        "rateToDollar": 1.28
+    },
+    "AU": {
+        "currency": "AUD",
+        "rateToDollar": 0.64
+    },
+    "AZ": {
+        "currency": "AZN",
+        "rateToDollar": 0.59
+    },
+    "IN": {
+        "currency": "INR",
+        "rateToDollar": 0.012
+    },
+    "IL": {
+        "currency": "ILS",
+        "rateToDollar": 0.26
+    },
+    "IT": {
+        "currency": "EUR",
+        "rateToDollar": 1.10
+    },
+    "KZ": {
+        "currency": "KZT",
+        "rateToDollar": 0.0021
+    },
+    "KW": {
+        "currency": "KWD",
+        "rateToDollar": 3.26
+    },
+    "NZ": {
+        "currency": "NZD",
+        "rateToDollar": 0.59
+    },
+    "NO": {
+        "currency": "NOK",
+        "rateToDollar": 0.093
+    },
+    "PK": {
+        "currency": "PKR",
+        "rateToDollar": 0.0036
+    },
+    "PL": {
+        "currency": "PLN",
+        "rateToDollar": 0.24
+    },
+    "QA": {
+        "currency": "QAR",
+        "rateToDollar": 0.27
+    },
+    "SA": {
+        "currency": "SAR",
+        "rateToDollar": 0.27
+    },
+    "ZA": {
+        "currency": "ZAR",
+        "rateToDollar": 0.054
+    },
+    "CH": {
+        "currency": "CHF",
+        "rateToDollar": 1.12
+    },
+    "TR": {
+        "currency": "TRY",
+        "rateToDollar": 0.037
+    },
+    "UA": {
+        "currency": "UAH",
+        "rateToDollar": 0.027
+    },
+    "AE": {
+        "currency": "AED",
+        "rateToDollar": 0.27
+    },
+    "BR": {
+        "currency": "BRL",
+        "rateToDollar": 0.20
+    },
+    "US": {
+        "currency": "USD",
+        "rateToDollar": 1.00
+    },
+    "LK": {
+        "currency": "LKR",
+        "rateToDollar": 0.0031
+    },
+    "VN": {
+        "currency": "VND",
+        "rateToDollar": 0.000043
+    },
+    "CN": {
+        "currency": "CNY",
+        "rateToDollar": 0.14
+    },
+    "JP": {
+        "currency": "JPY",
+        "rateToDollar": 0.007
+    },
+    "TH": {
+        "currency": "THB",
+        "rateToDollar": 0.029
+    },
+    "TW": {
+        "currency": "TWD",
+        "rateToDollar": 0.032
+    },
+    "KR": {
+        "currency": "KRW",
+        "rateToDollar": 0.00084
+    },
+    "SG": {
+        "currency": "SGD",
+        "rateToDollar": 0.74
+    },
+    "PH": {
+        "currency": "PHP",
+        "rateToDollar": 0.018
+    },
+    "PE": {
+        "currency": "PEN",
+        "rateToDollar": 0.27
+    },
+    "PA": {
+        "currency": "PAB",
+        "rateToDollar": 1.00
+    },
+    "MX": {
+        "currency": "MXN",
+        "rateToDollar": 0.051
+    },
+    "MY": {
+        "currency": "MYR",
+        "rateToDollar": 0.24
+    },
+    "LA": {
+        "currency": "LAK",
+        "rateToDollar": 0.000052
+    },
+    "JM": {
+        "currency": "JMD",
+        "rateToDollar": 0.0065
+    },
+    "ID": {
+        "currency": "IDR",
+        "rateToDollar": 0.000069
+    },
+    "HK": {
+        "currency": "HKD",
+        "rateToDollar": 0.13
+    },
+    "EC": {
+        "currency": "USD",
+        "rateToDollar": 1.00
+    },
+    "DO": {
+        "currency": "DOP",
+        "rateToDollar": 0.018
+    },
+    "CR": {
+        "currency": "CRC",
+        "rateToDollar": 0.0016
+    },
+    "CO": {
+        "currency": "COP",
+        "rateToDollar": 0.00026
+    },
+    "CL": {
+        "currency": "CLP",
+        "rateToDollar": 0.0013
+    },
+    "CA": {
+        "currency": "CAD",
+        "rateToDollar": 0.75
+    },
+    "KH": {
+        "currency": "KHR",
+        "rateToDollar": 0.00024
+    },
+    "BO": {
+        "currency": "BOB",
+        "rateToDollar": 0.14
+    },
+    "AR": {
+        "currency": "ARS",
+        "rateToDollar": 0.010
+    }
 }
