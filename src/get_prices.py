@@ -10,8 +10,10 @@ root_folder = Path(__file__).parents[1]
 # Obtem os preços dos jogos em múltiplas regiões e moedas com base em uma API
 
 
-#Primeiramente, obtem-se os IDs de jogos nessa API, que são diferentes dos coletadas para a Steam
+# Primeiramente, obtem-se os IDs de jogos nessa API, que são diferentes dos coletadas para a Steam
 def get_uuids():
+    sensitive_file = open(os.path.join("initial_data", "sensitivedata.json"), "r")
+    sensitive_data = json.load(sensitive_file)
     game_file = open(
         os.path.join(str(root_folder), "intermediate_data", "list_total.json"), "r"
     )
@@ -23,7 +25,9 @@ def get_uuids():
         game_info = requests.get(
             url="https://api.isthereanydeal.com/games/lookup/v1",
             params={
-                "key": "f5650820ffe914c3c5f60ee8685535416278ff23",
+                "key": sensitive_data[
+                    "api_key"
+                ],  # Key para acessar API pode ser obtida em https://isthereanydeal.com/apps/my/
                 "appid": steam_id,
             },
         )

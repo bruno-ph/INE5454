@@ -1,5 +1,6 @@
 {
-    "account_id": ,
-    "zone_name": ,
-    "zone_password":
+    "account_id": "",
+    "zone_name": "",
+    "zone_password": "",
+    "api_key": ""
 }
