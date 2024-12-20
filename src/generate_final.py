@@ -1,11 +1,15 @@
 import json
-import sys
 from pathlib import Path
 import os
 
 genres = {}
 root_folder = Path(__file__).parents[1]
-with open(os.path.join(root_folder, "src", "list_languages.json"), "r") as f:
+
+# Gera o dataset completo com base em todos os dados intermediários
+
+with open(
+    os.path.join(root_folder, "intermediate_data", "list_languages.json"), "r"
+) as f:
     langs = json.load(f)
 with open(os.path.join(root_folder, "src", "gamecrawl", "output.json"), "r") as f:
     genresfile = json.load(f)
@@ -18,12 +22,14 @@ with open(os.path.join(root_folder, "src", "gamecrawl", "output.json"), "r") as 
             "genres": content["genres"],
             "url": content["url"],
         }
-with open(os.path.join(root_folder, "src", "game_references.json"), "r") as f:
+with open(
+    os.path.join(root_folder, "intermediate_data", "game_references.json"), "r"
+) as f:
     game_references = json.load(f)
 
-with open(os.path.join(root_folder, "currencies.json"), "r") as f:
+with open(os.path.join(root_folder, "initial_data", "currencies.json"), "r") as f:
     currencies = json.load(f)
-f = open(os.path.join(root_folder, "src", "list_total.json"), "r")
+f = open(os.path.join(root_folder, "intermediate_data", "list_total.json"), "r")
 data = json.load(f)
 
 for key in data.keys():
@@ -37,12 +43,14 @@ for key in data.keys():
         data[key]["languages"] = langs[key]["languages"]
         data[key]["url"] = [langs[key]["url"]]
     data[key]["prices"] = {}
-workable_countries = open(str(root_folder) + "/workable_countries.txt", "r")
+workable_countries = open(
+    os.path.join(str(root_folder), "intermediate_data", "workable_countries.txt"), "r"
+)
 for country in workable_countries:
     with open(
         os.path.join(
             root_folder,
-            "src",
+            "intermediate_data",
             "prices_per_currency",
             f"prices_{currencies[country.strip()]['currency']}.json",
         )

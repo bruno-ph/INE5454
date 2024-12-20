@@ -1,4 +1,3 @@
-import sys
 from pathlib import Path
 import json
 import os
@@ -7,29 +6,38 @@ import os
 max_per_country = 3000
 
 
+# Arquivo produz um JSON com todos os jogos, aglomerando conteúdo
+# das listas de popularidades regionais, com appid, título e placar de popularidade em cada país
 def main():
 
     root_folder = Path(__file__).parents[1]
     print(root_folder)
-
-    # total_file=open(str(root_folder)+ "/src/regional_lists/regional_lists/list_total.json","w",encoding="utf-8")
-    # total_file=open(str(root_folder)+ "\src\regional_lists\regional_lists\list_total.json","w",encoding="utf-8")
     total_file = open(
-        os.path.join(root_folder, "src", "list_total.json"), "w", encoding="utf-8"
+        os.path.join(root_folder, "intermediate_data", "list_total.json"),
+        "w",
+        encoding="utf-8",
     )
     country_list = list(
-        (open(os.path.join(root_folder, "workable_countries.txt"), "r")).readlines()
+        (
+            open(
+                os.path.join(
+                    root_folder, "intermediate_data", "workable_countries.txt"
+                ),
+                "r",
+            )
+        ).readlines()
     )
     total_games = {}
 
     for country in country_list:
         game_counter = 1
         print(country)
-        # regional_file=open(str(root_folder)+ "\src\regional_lists\regional_lists\list_"+country+".json","r")
-        # regional_file=open(str(root_folder)+ "/src/regional_lists/regional_lists/list_"+country+".json","r")
         regional_file = open(
             os.path.join(
-                root_folder, "src", "regional_lists", f"list_{country.strip()}.json"
+                root_folder,
+                "intermediate_data",
+                "regional_lists",
+                f"list_{country.strip()}.json",
             ),
             "r",
             encoding="utf-8",

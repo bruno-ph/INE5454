@@ -2,17 +2,20 @@ import requests
 import time
 from bs4 import BeautifulSoup
 import sys
+import os
 import json
 from pathlib import Path
 
 # Arquivo obtém lista de jogos populares (em ordem) no país em que é executado
 # https://store.steampowered.com/search/?sort_by=&sort_order=0&category1=998&filter=topsellers&page=[1-250]
+
+# Rodar via arquivo bash multi.sh
 sorted_game_list = []
 root_folder = Path(__file__).parents[1]
 
 
 def get_proxies():
-    country_list = open("countries.json", "r")
+    country_list = open(os.path.join("initial_data", "countries.json"), "r")
     list = json.load(country_list)
     for item in list.keys():
         if "proxy" in list[item].keys():
@@ -21,7 +24,7 @@ def get_proxies():
 
 def get_countries():
     countries = []
-    country_list = open("countries.json", "r")
+    country_list = open(os.path.join("initial_data", "countries.json"), "r")
     list = json.load(country_list)
     for item in list.keys():
         countries.append(list[item]["code"])
@@ -36,7 +39,7 @@ def print_countries():
 
 def get_regional_list(country_code="br"):
     print(country_code)
-    sensitive_file = open("sensitivedata.json", "r")
+    sensitive_file = open(os.path.join("initial_data", "sensitivedata.json"), "r")
     sensitive_data = json.load(sensitive_file)
     account_id = sensitive_data["account_id"]
     zone_name = sensitive_data["zone_name"]
@@ -84,7 +87,12 @@ def make_regional_lists(country_code="br"):
     get_regional_list(country_code)
 
     with open(
-        str(root_folder) + "/src/regional_lists/list_" + country_code + ".json",
+        os.path.join(
+            str(root_folder),
+            "intermediate_data",
+            "regional_lists",
+            "list_" + country_code + ".json",
+        ),
         "w",
         encoding="utf-8",
     ) as json_file:  # dump to json file
@@ -92,9 +100,5 @@ def make_regional_lists(country_code="br"):
 
 
 if __name__ == "__main__":
-    # country_list = get_countries()
-    # print(country_list)
-    # for country in country_list:
-    #     make_regional_lists(country)
     cc = sys.argv[1]
     make_regional_lists(cc)
