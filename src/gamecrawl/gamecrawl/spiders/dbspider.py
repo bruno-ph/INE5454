@@ -21,7 +21,9 @@ def searchform(somestr):
 
 # open a json file
 root_folder = Path(__file__).parents[3]
-with open(os.path.join(str(root_folder), "list_total.json")) as jsonFile:
+with open(
+    os.path.join(str(root_folder), "intermediate_data", "list_total.json")
+) as jsonFile:
     gamefile = json.load(jsonFile)
     gameids = gamefile.keys()
     gamenames = [gamefile[key]["title"] for key in gamefile.keys()]
@@ -70,4 +72,4 @@ class DBSpider(CrawlSpider):
         for g in genre_block:
             genre = g.xpath("@content").get()
             genres.append(genre)
-        yield {appid: {"title": gamename, "genres": genres,"url": response.url}}
+        yield {appid: {"title": gamename, "genres": genres, "url": response.url}}
