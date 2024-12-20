@@ -60,14 +60,12 @@ def get_regional_list(country_code="br"):
 
         while response.status_code != 200:  # Insiste até receber uma resposta válida
             time.sleep(0.1)
-            print("eepy\n")
             response = requests.get(base_url + str(i), proxies=proxies)
         soup = BeautifulSoup(response.text, "html.parser")
         product_tags = soup.find_all(
             "a", {"data-ds-appid": True}
         )  # Encontra tags com id de produto (ordenadas por relevância)
         for tag in product_tags:  # Itera pelas tags de cada página
-            print("entrou\n")  # terminal
             appid = tag.get("data-ds-appid").rsplit(",")[
                 0
             ]  # ID do produto (se for bundle, apenas ID do primeiro, talvez reconsiderar isso)
