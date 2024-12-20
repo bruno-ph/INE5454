@@ -35,6 +35,7 @@ data = json.load(f)
 for key in data.keys():
     if key in genres.keys() and key in langs.keys():
         data[key]["languages"] = langs[key]["languages"]
+        data[key]["genres"] = genres[key]["genres"]
         data[key]["url"] = [langs[key]["url"], genres[key]["url"]]
     elif key in genres.keys():
         data[key]["genres"] = genres[key]["genres"]
