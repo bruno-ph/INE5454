@@ -24,12 +24,12 @@ def read_lang_table(page):
 
 def get_languages():
     return_dict = {}
-    root_folder = Path(__file__).parents[0]
+    root_folder = Path(__file__).parents[1]
     games_file = open(
         os.path.join(root_folder, "intermediate_data", "list_total.json"), "r"
     )
     games_dict = json.load(games_file)
-    for appid in games_dict.keys():
+    for appid in list(games_dict.keys())[:10]:
         try:
             print(len(return_dict), "-", (appid))
             gameurl = "https://store.steampowered.com/app/" + appid
@@ -40,7 +40,7 @@ def get_languages():
         except:
             print("Error on " + appid)
     with open(
-        os.path.join(root_folder, "intermediate_data" "list_languages.json"), "w"
+        os.path.join(root_folder, "intermediate_data", "list_languages.json"), "w"
     ) as returnfile:
         json.dump(return_dict, returnfile, indent=4, ensure_ascii=False)
 

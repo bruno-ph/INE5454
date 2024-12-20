@@ -27,7 +27,7 @@ with open(
 ) as f:
     game_references = json.load(f)
 
-with open(os.path.join(root_folder, "inital_data", "currencies.json"), "r") as f:
+with open(os.path.join(root_folder, "initial_data", "currencies.json"), "r") as f:
     currencies = json.load(f)
 f = open(os.path.join(root_folder, "intermediate_data", "list_total.json"), "r")
 data = json.load(f)
@@ -44,7 +44,7 @@ for key in data.keys():
         data[key]["url"] = [langs[key]["url"]]
     data[key]["prices"] = {}
 workable_countries = open(
-    str(root_folder), "intermediate_data", "workable_countries.txt", "r"
+    os.path.join(str(root_folder), "intermediate_data", "workable_countries.txt"), "r"
 )
 for country in workable_countries:
     with open(

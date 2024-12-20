@@ -8,6 +8,9 @@ root_folder = Path(__file__).parents[1]
 
 
 # Obtem os preços dos jogos em múltiplas regiões e moedas com base em uma API
+
+
+#Primeiramente, obtem-se os IDs de jogos nessa API, que são diferentes dos coletadas para a Steam
 def get_uuids():
     game_file = open(
         os.path.join(str(root_folder), "intermediate_data", "list_total.json"), "r"

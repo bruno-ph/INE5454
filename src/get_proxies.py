@@ -13,7 +13,8 @@ zone_password = sensitive_data["zone_password"]
 file = open(os.path.join("intermediate_data", "workable_countries.txt"), "w")
 
 countries = get_regional_list.get_countries()
-for country in countries:
+for country in countries[:3]:
+    print(country)
     proxies = {
         "http": f"http://brd-customer-{account_id}-zone-{zone_name}-country-{country.lower()}:{zone_password}@brd.superproxy.io:33335",
         "https": f"http://brd-customer-{account_id}-zone-{zone_name}-country-{country.lower()}:{zone_password}@brd.superproxy.io:33335",

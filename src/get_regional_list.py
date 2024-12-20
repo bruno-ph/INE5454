@@ -8,6 +8,8 @@ from pathlib import Path
 
 # Arquivo obtém lista de jogos populares (em ordem) no país em que é executado
 # https://store.steampowered.com/search/?sort_by=&sort_order=0&category1=998&filter=topsellers&page=[1-250]
+
+# Rodar via arquivo bash multi.sh
 sorted_game_list = []
 root_folder = Path(__file__).parents[1]
 
@@ -22,7 +24,7 @@ def get_proxies():
 
 def get_countries():
     countries = []
-    country_list = open("countries.json", "r")
+    country_list = open(os.path.join("initial_data", "countries.json"), "r")
     list = json.load(country_list)
     for item in list.keys():
         countries.append(list[item]["code"])
