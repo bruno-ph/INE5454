@@ -29,7 +29,7 @@ def get_languages():
         os.path.join(root_folder, "intermediate_data", "list_total.json"), "r"
     )
     games_dict = json.load(games_file)
-    for appid in list(games_dict.keys())[:10]:
+    for appid in games_dict.keys():
         try:
             print(len(return_dict), "-", (appid))
             gameurl = "https://store.steampowered.com/app/" + appid

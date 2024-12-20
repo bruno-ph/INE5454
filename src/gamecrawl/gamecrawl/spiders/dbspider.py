@@ -20,7 +20,7 @@ def searchform(somestr):
 
 
 # open a json file
-root_folder = Path(__file__).parents[3]
+root_folder = Path(__file__).parents[4]
 with open(
     os.path.join(str(root_folder), "intermediate_data", "list_total.json")
 ) as jsonFile:
