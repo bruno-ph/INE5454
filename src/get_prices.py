@@ -19,6 +19,8 @@ def get_uuids():
                 "appid":steam_id
                 }
             )
+        if not game_info.content or game_info.status_code != 200:
+            continue
         game_info_json = json.loads(game_info.content.decode("utf-8"))
         game_uuids[steam_id] = game_info_json["game"]["id"]
         
@@ -57,6 +59,14 @@ def get_prices(game_uuids, country):
                     country_prices_dict[game['id']] = deal['regular']['amount']
     return country_prices_dict
 
+def create_game_references(game_references):
+    with open(
+        str(root_folder) + "/src/game_references.json",
+        "w",
+        encoding="utf-8",
+    ) as json_file:  # dump to json file
+        json.dump(game_references, json_file, ensure_ascii=False, indent=4)
+
 def create_prices_dict(country_prices_dict, currency):
     with open(
         str(root_folder) + "/src/prices_per_currency/prices_" + currency + ".json",
@@ -66,7 +76,9 @@ def create_prices_dict(country_prices_dict, currency):
         json.dump(country_prices_dict, json_file, ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
-    game_uuids = list(get_uuids().values())
+    game_references = get_uuids()
+    create_game_references(game_references)
+    game_uuids = list(game_references.values())
     workable_countries = open(str(root_folder) + "/workable_countries.txt", 'r')
     currencies = open(str(root_folder) + "/currencies.json", 'r')
     currencies_dict = json.load(currencies)
